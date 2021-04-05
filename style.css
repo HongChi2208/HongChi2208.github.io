@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&display=swap');
+@import url('https://npmcdn.com/flickity@2/dist/flickity.css');
+
 * {
     padding: 0;
     margin: 0;
@@ -169,6 +171,9 @@ hr {
 }
 .new {
     display: flex;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 33px;
 }
 .new .new__left{
     width: 50%;
@@ -258,6 +263,50 @@ a.new__top_left {
 .view__all {
     color: #062245;
 }
+.new::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 97%;
+    height: 1px;
+    background: #e0e0e0;
+}
+.main__right {
+    margin-top: 10px;
+}
+.main__right__title h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+  /* cell number */
+  .carousel {
+    background: #FAFAFA;
+  }
+  
+  .carousel-cell {
+    width: 28%;
+    height: 200px;
+    margin-right: 10px;
+    background: #333;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+  }
+  .carousel-cell.is-selected {
+    background: #ED2;
+  }
+  
+  /* fade in lazy loaded image */
+  /* .carousel-cell-image.flickity-lazyloaded,
+  .carousel-cell-image.flickity-lazyerror {
+    opacity: 1;
+  } */
+  
+  
 /* end main */
 
 
